@@ -542,7 +542,8 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:30px;
+    gap:24px;
+    width:100%;
   }
 
   .section-title{
@@ -550,44 +551,121 @@
     font-weight:800;
     text-align:center;
     letter-spacing:1px;
-    margin-bottom:20px;
+    margin-bottom:8px;
   }
 
-  .video-frame{
-    display:flex;
-    flex-direction:row;
-    gap:30px;
-    width:100%;
-    align-items:flex-start;
-    justify-content:center;
-    flex-wrap:wrap;
+  .video-showcase{
+    width:min(100%, 860px);
   }
 
-  .video-frame > div[style*="padding"]{
-    width:calc(50% - 15px);
-    max-width:560px;
-    min-width:300px;
-    background:var(--card);
-    border-radius:12px;
+  .video-stage{
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    border-radius:24px;
+    background:var(--card);
+    border:1px solid var(--rule);
+    box-shadow:0 16px 40px rgba(0,0,0,.12);
+    padding:18px;
   }
 
-  .video-frame iframe{
-    border-radius:12px;
-    box-shadow:none;
-    transition:transform .3s ease, box-shadow .3s ease;
+  .video-track{
+    display:flex;
+    transition:transform .35s ease;
+    touch-action:pan-y;
+    cursor:grab;
+    user-select:none;
   }
 
-  .video-frame > div[style*="padding"]:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
+  .video-slide{
+    min-width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
   }
 
-  @media (max-width: 1200px){
-    .video-frame > div[style*="padding"]{
-      width:100%;
-    }
+  .video-shell{
+    position:relative;
+    width:100%;
+    aspect-ratio:16 / 9;
+    border-radius:16px;
+    overflow:hidden;
+    background:#000;
+  }
+
+  .video-shell iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    background:#000;
+  }
+
+  .video-meta{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    padding:0 4px 4px;
+  }
+
+  .video-meta h3{
+    font-size:20px;
+    font-weight:700;
+  }
+
+  .video-meta p{
+    font-size:14px;
+    line-height:1.6;
+    color:var(--muted);
+  }
+
+  .video-controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-top:16px;
+  }
+
+  .video-nav{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:2px solid var(--border);
+    background:var(--card);
+    color:var(--ink);
+    font-size:20px;
+    display:grid;
+    place-items:center;
+    cursor:pointer;
+  }
+
+  .video-dots{
+    display:flex;
+    gap:8px;
+    align-items:center;
+  }
+
+  .video-dot{
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    border:none;
+    background:var(--muted);
+    opacity:.45;
+    cursor:pointer;
+    padding:0;
+  }
+
+  .video-dot.active{
+    opacity:1;
+    background:var(--ink);
+    transform:scale(1.12);
+  }
+
+  @media (max-width: 640px){
+    .video-stage{ padding:12px; }
+    .video-controls{ gap:10px; }
+    .video-nav{ width:40px; height:40px; }
   }
 
   .poster-grid{
@@ -1070,26 +1148,117 @@
       
       <div class="main-video-wrapper reveal">
         <span class="section-title">Showcase</span>
-        <div class="video-frame">
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215773249?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sample Work Flow of Ai Video Editing"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215772274?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sample AI _ Turmeric Tea"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
 
-        <div class="video-frame">
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215772273?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sample Product Ads"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215822809?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Start today"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
+        <div class="video-showcase">
+          <div class="video-stage">
+            <div class="video-track" id="videoTrack">
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215773249?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Sample Work Flow of Ai Video Editing"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Workflow showcase</h3>
+                  <p>AI-assisted editing flow from concept to polished social content.</p>
+                </div>
+              </div>
 
-        <div class="video-frame">
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215772275?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Replace_avatar_in_video_202608040658"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215772276?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Health Tip Vegetables"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215772274?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Sample AI _ Turmeric Tea"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Turmeric tea ad</h3>
+                  <p>Short-form promotional content created with a bright, modern style.</p>
+                </div>
+              </div>
 
-        <div class="video-frame">
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215737120?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="motivational quotes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215816294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pet Food"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1216104302?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="5 Benefits of Drinking Lemon Ginger Turmeric Tea"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>5 Benefits of Drinking Lemon Ginger Turmeric Tea</h3>
+                  <p>Short-form promotional content for a healthy tips.</p>
+                </div>
+              </div>
 
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215772273?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Sample Product Ads"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Product ad concept</h3>
+                  <p>Clean visuals and pacing tailored for product storytelling.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215822809?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Start today"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Motivational intro</h3>
+                  <p>Fast-paced, engaging content that grabs attention immediately.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215772275?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Replace_avatar_in_video_202608040658"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Avatar replacement edit</h3>
+                  <p>Dynamic avatar-based content with seamless scene transitions.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215772276?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Health Tip Vegetables"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Health tip video</h3>
+                  <p>Educational content styled for social media engagement.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215737120?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="motivational quotes"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Motivational quotes</h3>
+                  <p>Minimal, polished motion graphics for inspiration-focused clips.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1215816294?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Pet Food"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Pet food promo</h3>
+                  <p>Playful, product-focused video designed for social reach.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-nav" type="button" data-direction="prev" aria-label="Previous video">←</button>
+            <div class="video-dots" id="videoDots">
+              <button class="video-dot active" type="button" data-index="0" aria-label="Go to video 1"></button>
+              <button class="video-dot" type="button" data-index="1" aria-label="Go to video 2"></button>
+              <button class="video-dot" type="button" data-index="2" aria-label="Go to video 3"></button>
+              <button class="video-dot" type="button" data-index="3" aria-label="Go to video 4"></button>
+              <button class="video-dot" type="button" data-index="4" aria-label="Go to video 5"></button>
+              <button class="video-dot" type="button" data-index="5" aria-label="Go to video 6"></button>
+              <button class="video-dot" type="button" data-index="6" aria-label="Go to video 7"></button>
+              <button class="video-dot" type="button" data-index="7" aria-label="Go to video 8"></button>
+            </div>
+            <button class="video-nav" type="button" data-direction="next" aria-label="Next video">→</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1149,6 +1318,7 @@
     </div>
   </div>
 
+  <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
     const revealEls = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
@@ -1194,34 +1364,94 @@
       if (event.key === 'Escape' && calendlyModal.classList.contains('open')) closeCalendly();
     });
 
-    // Pause other video when one starts playing
-    // Initialize Vimeo players and manage playback
-    const videoFrames = document.querySelectorAll('.video-frame iframe');
+    const videoTrack = document.getElementById('videoTrack');
+    const videoDots = document.querySelectorAll('.video-dot');
+    const videoNavButtons = document.querySelectorAll('.video-nav');
+    const videoSlides = document.querySelectorAll('.video-slide');
+    const videoIframes = document.querySelectorAll('.video-shell iframe');
     const players = [];
-    let currentlyPlaying = null;
+    let currentIndex = 0;
+    let startX = 0;
+    let isDragging = false;
+    let activePlayerIndex = null;
 
-    videoFrames.forEach((iframe, index) => {
+    const updateCarousel = () => {
+      if (!videoTrack) return;
+      videoTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+      videoDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    };
+
+    const pauseAllPlayers = () => {
+      players.forEach((player) => {
+        if (player && typeof player.pause === 'function') {
+          player.pause().catch(() => {});
+        }
+      });
+      activePlayerIndex = null;
+    };
+
+    const goToSlide = (index) => {
+      currentIndex = (index + videoSlides.length) % videoSlides.length;
+      pauseAllPlayers();
+      updateCarousel();
+    };
+
+    videoNavButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const direction = button.getAttribute('data-direction') === 'next' ? 1 : -1;
+        goToSlide(currentIndex + direction);
+      });
+    });
+
+    videoDots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        goToSlide(Number(dot.getAttribute('data-index')));
+      });
+    });
+
+    const handleSwipeStart = (clientX) => {
+      startX = clientX;
+      isDragging = true;
+    };
+
+    const handleSwipeEnd = (clientX) => {
+      if (!isDragging) return;
+      const deltaX = clientX - startX;
+      if (deltaX > 70) goToSlide(currentIndex - 1);
+      if (deltaX < -70) goToSlide(currentIndex + 1);
+      isDragging = false;
+    };
+
+    videoIframes.forEach((iframe, index) => {
       const player = new Vimeo.Player(iframe);
       players.push(player);
 
-      // Listen for play events
       player.on('play', () => {
-        // Pause all other videos
         players.forEach((otherPlayer, otherIndex) => {
-          if (otherIndex !== index && currentlyPlaying !== index) {
-            otherPlayer.pause();
+          if (otherIndex !== index) {
+            otherPlayer.pause().catch(() => {});
           }
         });
-        currentlyPlaying = index;
+        activePlayerIndex = index;
       });
 
-      // Listen for pause events
       player.on('pause', () => {
-        if (currentlyPlaying === index) {
-          currentlyPlaying = null;
+        if (activePlayerIndex === index) {
+          activePlayerIndex = null;
         }
       });
     });
+
+    if (videoTrack) {
+      videoTrack.addEventListener('touchstart', (event) => handleSwipeStart(event.touches[0].clientX), { passive: true });
+      videoTrack.addEventListener('touchend', (event) => handleSwipeEnd(event.changedTouches[0].clientX));
+      videoTrack.addEventListener('mousedown', (event) => handleSwipeStart(event.clientX));
+      window.addEventListener('mouseup', (event) => handleSwipeEnd(event.clientX));
+    }
+
+    updateCarousel();
   </script>
 
 </body>
