@@ -565,6 +565,20 @@
     border:1px solid var(--rule);
     box-shadow:0 16px 40px rgba(0,0,0,.12);
     padding:18px;
+    width:100%;
+    max-width:860px;
+    margin:0 auto;
+  }
+
+  .video-stage.mobile-fit{
+    border-radius:0;
+    border:none;
+    box-shadow:none;
+    padding:12px 10px 16px;
+    width:100vw;
+    max-width:none;
+    left:50%;
+    transform:translateX(-50%);
   }
 
   .video-track{
@@ -573,7 +587,10 @@
     touch-action:pan-y;
     cursor:grab;
     user-select:none;
+    will-change:transform;
   }
+
+  .video-track.grabbing{ cursor:grabbing; }
 
   .video-slide{
     min-width:100%;
@@ -589,6 +606,32 @@
     border-radius:16px;
     overflow:hidden;
     background:#000;
+  }
+
+  .video-stage.mobile-fit .video-shell{
+    border-radius:0;
+  }
+
+  .video-stage.mobile-fit .video-meta{
+    padding:0 2px 2px;
+  }
+
+  .video-shell iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    background:#000;
+  }
+
+  @media (max-width: 720px){
+    .video-showcase{ width:100%; }
+    .video-stage{ padding:12px; }
+    .video-shell{ aspect-ratio:16 / 9; }
+    .video-controls{ gap:10px; }
+    .video-nav{ width:40px; height:40px; }
+    .video-stage.mobile-fit{ padding:10px 8px 14px; }
   }
 
   .video-shell iframe{
@@ -1154,6 +1197,16 @@
             <div class="video-track" id="videoTrack">
               <div class="video-slide">
                 <div class="video-shell">
+                  <iframe src="https://player.vimeo.com/video/1217310854?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="How I Keep My Dog's Fur Flea-Free"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Workflow showcase</h3>
+                  <p>Try this to avoid your dog scratching and flea-free.</p>
+                </div>
+              </div>
+
+              <div class="video-slide">
+                <div class="video-shell">
                   <iframe src="https://player.vimeo.com/video/1215773249?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Sample Work Flow of Ai Video Editing"></iframe>
                 </div>
                 <div class="video-meta">
@@ -1392,10 +1445,13 @@
       activePlayerIndex = null;
     };
 
-    const goToSlide = (index) => {
+    const goToSlide = (index, autoPlay = false) => {
       currentIndex = (index + videoSlides.length) % videoSlides.length;
       pauseAllPlayers();
       updateCarousel();
+      if (autoPlay && players[currentIndex]) {
+        players[currentIndex].play().catch(() => {});
+      }
     };
 
     videoNavButtons.forEach((button) => {
@@ -1437,12 +1493,26 @@
         activePlayerIndex = index;
       });
 
+      player.on('ended', () => {
+        const nextIndex = (index + 1) % videoSlides.length;
+        if (nextIndex !== index) {
+          goToSlide(nextIndex, true);
+        }
+      });
+
       player.on('pause', () => {
         if (activePlayerIndex === index) {
           activePlayerIndex = null;
         }
       });
     });
+
+    const setMobileFitMode = () => {
+      const isPhone = window.matchMedia('(max-width: 720px)').matches;
+      const stage = document.querySelector('.video-stage');
+      if (!stage) return;
+      stage.classList.toggle('mobile-fit', isPhone);
+    };
 
     if (videoTrack) {
       videoTrack.addEventListener('touchstart', (event) => handleSwipeStart(event.touches[0].clientX), { passive: true });
@@ -1451,6 +1521,8 @@
       window.addEventListener('mouseup', (event) => handleSwipeEnd(event.clientX));
     }
 
+    window.addEventListener('resize', setMobileFitMode);
+    setMobileFitMode();
     updateCarousel();
   </script>
 
