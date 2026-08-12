@@ -556,6 +556,7 @@
 
   .video-showcase{
     width:min(100%, 860px);
+    margin:0 auto;
   }
 
   .video-stage{
@@ -571,14 +572,16 @@
   }
 
   .video-stage.mobile-fit{
+    position:relative;
     border-radius:0;
     border:none;
     box-shadow:none;
     padding:12px 10px 16px;
-    width:100vw;
-    max-width:none;
-    left:50%;
-    transform:translateX(-50%);
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+    left:auto;
+    transform:none;
   }
 
   .video-track{
