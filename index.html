@@ -546,6 +546,9 @@
     width:100%;
   }
 
+  .main-video-wrapper + .main-video-wrapper{ margin-top:70px; }
+  .video-dots{ flex-wrap:wrap; justify-content:center; }
+
   .section-title{
     font-size:clamp(28px, 3.4vw, 40px);
     font-weight:800;
@@ -1013,6 +1016,30 @@
             </div>
             <span style="font-size:12px; text-align:center; color:var(--muted); font-weight:600;">Kling AI</span>
           </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <div style="width:64px; height:64px; border-radius:12px; background:#a259ff; display:flex; align-items:center; justify-content:center;" title="Figma Weave">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><text x="12" y="16" text-anchor="middle" font-size="20" font-weight="bold">W</text></svg>
+            </div>
+            <span style="font-size:12px; text-align:center; color:var(--muted); font-weight:600;">Figma Weave</span>
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <div style="width:64px; height:64px; border-radius:12px; background:#5b53ff; display:flex; align-items:center; justify-content:center;" title="Frame.io">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><text x="12" y="16" text-anchor="middle" font-size="20" font-weight="bold">F</text></svg>
+            </div>
+            <span style="font-size:12px; text-align:center; color:var(--muted); font-weight:600;">Frame.io</span>
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <div style="width:64px; height:64px; border-radius:12px; background:#18bfff; display:flex; align-items:center; justify-content:center;" title="Airtable">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><text x="12" y="16" text-anchor="middle" font-size="20" font-weight="bold">A</text></svg>
+            </div>
+            <span style="font-size:12px; text-align:center; color:var(--muted); font-weight:600;">Airtable</span>
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <div style="width:64px; height:64px; border-radius:12px; background:#000; display:flex; align-items:center; justify-content:center;" title="Notion">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><text x="12" y="16" text-anchor="middle" font-size="20" font-weight="bold">N</text></svg>
+            </div>
+            <span style="font-size:12px; text-align:center; color:var(--muted); font-weight:600;">Notion</span>
+          </div>
         </div>
       </div>
 
@@ -1130,11 +1157,11 @@
 
         <div class="about-copy">
           <p>Hi, I'm Robin, an AI Video Editor passionate about transforming ideas into engaging videos that capture attention and tell compelling stories. I create AI-powered videos, AI avatar content, short-form reels, and social media visuals that help businesses strengthen their online presence.</p>
-          <p>I'm continuously building my expertise in AI video production by creating portfolio projects, exploring the latest AI tools, and refining my creative workflow. I'm excited to collaborate with businesses, create engaging video content, and grow through real client partnerships.</p>
-          <p>I believe there's always room to learn and improve. That's why I'm constantly exploring new AI technologies, enhancing my editing skills, and finding more efficient ways to produce high-quality content. Every project is an opportunity to deliver value, save clients time, and help their brand stand out.</p>
+          <p>Most recently, I worked as an AI Video Editor for Clean Nutra, a US-based health and wellness brand, producing AI-assisted marketing and social media videos. I generated visuals in Figma Weave, handled feedback rounds in Frame.io, and tracked deliverables in Airtable with a remote creative team. Today I run daily AI video production for freelance clients, from animated series to research-based voice-over videos.</p>
+          <p>I use Claude, ChatGPT, and Gemini every day to speed up research, scripting, and prompting, so I can deliver more content without losing quality. My 9 years in engineering and production planning taught me to work to schedules and specifications, and I bring that same discipline to every creative project: organized workflows, clear communication, and on-time delivery.</p>
 
           <div class="about-foot">
-            <p class="years"><b>9+ Years</b><br>Production Planning Engineer - Transitioning to AI Video Editing</p>
+            <p class="years"><b>9+ Years</b><br>Engineering &amp; Production Planning - Now an AI Video Editor</p>
             <a href="#contacts" class="pill-btn"><u>Work with me!</u></a>
           </div>
         </div>
@@ -1153,9 +1180,20 @@
           <p class="role">University of Perpetual Help System Laguna</p>
           <h3>Bachelor of Science in Computer Engineering</h3>
           <ul>
-            <li>Have been finished my degree in Computer Engineering.</li>
-            <li>Developed a strong fundamentals in programming, electronics, and system design.</li>
+            <li>Earned a Bachelor's degree in Computer Engineering.</li>
+            <li>Developed strong fundamentals in programming, electronics, and system design.</li>
             <li>Gained practical experience through hands-on projects and internships, applying theoretical knowledge to real-world scenarios.</li>
+          </ul>
+        </div>
+
+        <div class="journey-card">
+          <span class="date-badge">2015</span>
+          <p class="role">Atlas Copco (Philippines) Inc.</p>
+          <h3>On-the-Job Trainee</h3>
+          <ul>
+            <li>Assigned to the Compressor Technique Business Area at Laguna Technopark.</li>
+            <li>Collected and mapped sales territory data in Google Maps to support market coverage.</li>
+            <li>Gained first hands-on exposure to a corporate, data-driven work environment.</li>
           </ul>
         </div>
 
@@ -1177,10 +1215,33 @@
           <p class="role">Shin-Etsu Magnetics Philippines, Inc.</p>
           <h3>Production Planner <br>(Sr. Engineer) </h3>
           <ul>
-            <li>Build and execute daily production plans across multiple lines, keeping output aligned to schedule and specification.</li>
-            <li>Track and analyze daily production data to flag deviations early and keep targets on schedule.</li>
-            <li>Forecast next-month material and resource requirements from historical production data and demand trends.</li>
-            <li>Coordinate across planning, machining, and quality teams to resolve scheduling conflicts and bottlenecks.</li>
+            <li>Built and executed daily production plans across multiple lines, keeping output aligned to schedule and specification.</li>
+            <li>Tracked and analyzed daily production data to flag deviations early and keep targets on schedule.</li>
+            <li>Forecasted next-month material and resource requirements from historical production data and demand trends.</li>
+            <li>Coordinated across planning, machining, and quality teams to resolve scheduling conflicts and bottlenecks.</li>
+          </ul>
+        </div>
+
+        <div class="journey-card">
+          <span class="date-badge">Sep - Oct 2026</span>
+          <p class="role">Clean Nutra (US-based, Remote)</p>
+          <h3>AI Video Editor</h3>
+          <ul>
+            <li>Edited and produced AI-assisted marketing and social media videos that matched the brand's look, tone, and messaging.</li>
+            <li>Generated and refined AI visuals and video assets in Figma Weave through iterative prompting.</li>
+            <li>Used Claude, ChatGPT, and Gemini to speed up scripting, hooks, captions, and research.</li>
+            <li>Managed feedback rounds in Frame.io and tracked deliverables in a shared Airtable base with 40+ collaborators.</li>
+          </ul>
+        </div>
+
+        <div class="journey-card">
+          <span class="date-badge">2026 - Present</span>
+          <p class="role">Self-Employed (Remote)</p>
+          <h3>Freelance AI Video Editor</h3>
+          <ul>
+            <li>Plan and run daily AI video production for clients, including an animated cooking series and research-based voice-over videos.</li>
+            <li>Build Notion content calendars that track each day's topic, script, and status, backed up in GitHub.</li>
+            <li>Turn AI-generated research, scripts, and visuals into polished, publish-ready videos.</li>
           </ul>
         </div>
       </div>
@@ -1197,7 +1258,7 @@
 
         <div class="video-showcase">
           <div class="video-stage">
-            <div class="video-track" id="videoTrack">
+            <div class="video-track">
               <div class="video-slide">
                 <div class="video-shell">
                   <iframe src="https://player.vimeo.com/video/1223360541?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Ad_Personalized Mhakho Necklace"></iframe>
@@ -1282,16 +1343,238 @@
 
           <div class="video-controls">
             <button class="video-nav" type="button" data-direction="prev" aria-label="Previous video">←</button>
-            <div class="video-dots" id="videoDots">
-              <button class="video-dot active" type="button" data-index="0" aria-label="Go to video 1"></button>
-              <button class="video-dot" type="button" data-index="1" aria-label="Go to video 2"></button>
-              <button class="video-dot" type="button" data-index="2" aria-label="Go to video 3"></button>
-              <button class="video-dot" type="button" data-index="3" aria-label="Go to video 4"></button>
-              <button class="video-dot" type="button" data-index="4" aria-label="Go to video 5"></button>
-              <button class="video-dot" type="button" data-index="5" aria-label="Go to video 6"></button>
-              <button class="video-dot" type="button" data-index="6" aria-label="Go to video 7"></button>
-              <button class="video-dot" type="button" data-index="7" aria-label="Go to video 8"></button>
+            <div class="video-dots"></div>
+            <button class="video-nav" type="button" data-direction="next" aria-label="Next video">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-video-wrapper reveal">
+        <span class="section-title">UGC &amp; Social Ads</span>
+
+        <div class="video-showcase">
+          <div class="video-stage">
+            <div class="video-track">
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1yVM-MKtK9K4lRIV9vcfRjjS_PUEL11Nv/preview" allow="autoplay; fullscreen" title="Fitness Is Simple - UGC Ad"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Fitness Is Simple - UGC Ad</h3>
+                  <p>Relatable creator-style fitness ad built for social feeds.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1ndbyR9p7Mw9yQHw8ujHAyU7z_qyL8-Zd/preview" allow="autoplay; fullscreen" title="UGC-Style Product Ad"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>UGC-Style Product Ad</h3>
+                  <p>Authentic, talking-to-camera ad format that feels native to TikTok and Reels.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1l8FGOea_bjO8YL6Hn08IJQV-DdmQca49/preview" allow="autoplay; fullscreen" title="Realistic UGC Skincare"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Realistic UGC Skincare</h3>
+                  <p>Lifelike AI-generated skincare testimonial in a natural UGC style.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1LxMBwpGUDBPE5mlTUGpgcSFQmnicngoV/preview" allow="autoplay; fullscreen" title="AI UGC Clone - English"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>AI UGC Clone - English</h3>
+                  <p>AI recreation of a wellness creator-style video in English.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1CF1xf81fWb_cPQYyEaqx92Mnj394yFYZ/preview" allow="autoplay; fullscreen" title="AI UGC Clone - Spanish"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>AI UGC Clone - Spanish</h3>
+                  <p>The same creator-style format localized into Spanish for a new audience.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1N3HxKDycOd3N6F7I-Xh2hqgBdCbTybTb/preview" allow="autoplay; fullscreen" title="AI UGC Clone - Fitness"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>AI UGC Clone - Fitness</h3>
+                  <p>High-energy fitness creator-style video recreated with AI.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1kU_TFNYXL8pPDjJG5FsY_1XcP6BSVHw6/preview" allow="autoplay; fullscreen" title="Real Estate - Your Home Style"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Real Estate - Your Home Style</h3>
+                  <p>Warm, aspirational property promo for real estate marketing.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1ZLSJYYbLEqh3IelL2BTml_WWbj27wDJT/preview" allow="autoplay; fullscreen" title="Podcast Format"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Podcast Format</h3>
+                  <p>Clean podcast-style edit ready for clips and long-form uploads.</p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-nav" type="button" data-direction="prev" aria-label="Previous video">←</button>
+            <div class="video-dots"></div>
+            <button class="video-nav" type="button" data-direction="next" aria-label="Next video">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-video-wrapper reveal">
+        <span class="section-title">AI Animation &amp; Storytelling</span>
+
+        <div class="video-showcase">
+          <div class="video-stage">
+            <div class="video-track">
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1T5wx1lOgD7PDGxN6nP04AkJ8Jj8xYOcl/preview" allow="autoplay; fullscreen" title="AI Pixar-Style Song Video"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>AI Pixar-Style Song Video</h3>
+                  <p>Animated music video with a playful 3D animated look.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1YDGpNn3c0wQGlNnZR-npcQpJh5-9P7sV/preview" allow="autoplay; fullscreen" title="Bogart's Big Feeling"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Bogart's Big Feeling</h3>
+                  <p>Pixar-style short story about emotions, made with AI animation.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1ssFogaOduBccSEfeKRMQRky4lwzIR7QJ/preview" allow="autoplay; fullscreen" title="Two Hearts, One Habit"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Two Hearts, One Habit</h3>
+                  <p>Charming claymation-style short with a heartfelt message.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/16sL62ZfBiFlot92jcCJ475i3kf6uzpmW/preview" allow="autoplay; fullscreen" title="Growing Together"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Growing Together</h3>
+                  <p>Long-form AI storytelling piece with emotional pacing.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1Lnh4_QBjtv_42nlJwZKgEoN_VbYWvEBR/preview" allow="autoplay; fullscreen" title="3D Animation Style"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>3D Animation Style</h3>
+                  <p>Stylized 3D animated sequence built with AI tools.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1sE98CRMZlpJrKJQmzc6NPhd1Xu9jTJFy/preview" allow="autoplay; fullscreen" title="3D Animation Style 02"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>3D Animation Style 02</h3>
+                  <p>A second 3D animation exploration with a different visual mood.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1QRo0PEH05pAViB_p6_c3Ns2shsn30PEd/preview" allow="autoplay; fullscreen" title="Bird Cup"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Bird Cup</h3>
+                  <p>Short, eye-catching AI animation concept.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1L-tHnLD-9Pyrervr1Ujh38uzzfjiU29G/preview" allow="autoplay; fullscreen" title="Moon"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Moon</h3>
+                  <p>Atmospheric cinematic AI visual piece.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1u6GJ6lm8Btjz_l0T1gua56g29B24BjBc/preview" allow="autoplay; fullscreen" title="Batang 90's Memories"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>Batang 90's Memories</h3>
+                  <p>Nostalgic Filipino 90's childhood throwback video.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-nav" type="button" data-direction="prev" aria-label="Previous video">←</button>
+            <div class="video-dots"></div>
+            <button class="video-nav" type="button" data-direction="next" aria-label="Next video">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-video-wrapper reveal">
+        <span class="section-title">Ghibli-Style Animation</span>
+
+        <div class="video-showcase">
+          <div class="video-stage">
+            <div class="video-track">
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1YU8Qm1a9xxrnokz1qkQZ0lIkQ1H3bDQB/preview" allow="autoplay; fullscreen" title="A Simple Family Home"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>A Simple Family Home</h3>
+                  <p>Cozy hand-drawn-style family story with a soft, warm palette.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/1Bz_RgVVK-tH_qKtDruu684_RLlOrH0Ot/preview" allow="autoplay; fullscreen" title="A Cozy Day in the Province"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>A Cozy Day in the Province</h3>
+                  <p>Slow, peaceful countryside scenes in a Ghibli-inspired style.</p>
+                </div>
+              </div>
+              <div class="video-slide">
+                <div class="video-shell">
+                  <iframe data-src="https://drive.google.com/file/d/147NOKySN9YDauuZtkCVf2uIBXbWXTbrk/preview" allow="autoplay; fullscreen" title="A Cozy Korean Kitchen"></iframe>
+                </div>
+                <div class="video-meta">
+                  <h3>A Cozy Korean Kitchen</h3>
+                  <p>Relaxing anime-style cooking scene full of small details.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-nav" type="button" data-direction="prev" aria-label="Previous video">←</button>
+            <div class="video-dots"></div>
             <button class="video-nav" type="button" data-direction="next" aria-label="Next video">→</button>
           </div>
         </div>
@@ -1400,113 +1683,101 @@
       if (event.key === 'Escape' && calendlyModal.classList.contains('open')) closeCalendly();
     });
 
-    const videoTrack = document.getElementById('videoTrack');
-    const videoDots = document.querySelectorAll('.video-dot');
-    const videoNavButtons = document.querySelectorAll('.video-nav');
-    const videoSlides = document.querySelectorAll('.video-slide');
-    const videoIframes = document.querySelectorAll('.video-shell iframe');
-    const players = [];
-    let currentIndex = 0;
-    let startX = 0;
-    let isDragging = false;
-    let activePlayerIndex = null;
+    const loadFrame = (iframe) => {
+      if (iframe && iframe.dataset.src && !iframe.src) iframe.src = iframe.dataset.src;
+    };
 
-    const updateCarousel = () => {
-      if (!videoTrack) return;
-      videoTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-      videoDots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
+    const allVimeoPlayers = [];
+    const pauseAllVimeo = (except) => {
+      allVimeoPlayers.forEach((p) => { if (p !== except) p.pause().catch(() => {}); });
+    };
+
+    document.querySelectorAll('.video-showcase').forEach((showcase) => {
+      const track = showcase.querySelector('.video-track');
+      const slides = showcase.querySelectorAll('.video-slide');
+      const dotsWrap = showcase.querySelector('.video-dots');
+      const navButtons = showcase.querySelectorAll('.video-nav');
+      const iframes = showcase.querySelectorAll('.video-shell iframe');
+      const players = [];
+      let currentIndex = 0;
+      let startX = 0;
+      let isDragging = false;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'video-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to video ' + (i + 1));
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsWrap.appendChild(dot);
       });
-    };
+      const dots = dotsWrap.querySelectorAll('.video-dot');
 
-    const pauseAllPlayers = () => {
-      players.forEach((player) => {
-        if (player && typeof player.pause === 'function') {
-          player.pause().catch(() => {});
-        }
-      });
-      activePlayerIndex = null;
-    };
-
-    const goToSlide = (index, autoPlay = false) => {
-      currentIndex = (index + videoSlides.length) % videoSlides.length;
-      pauseAllPlayers();
-      updateCarousel();
-      if (autoPlay && players[currentIndex]) {
-        players[currentIndex].play().catch(() => {});
-      }
-    };
-
-    videoNavButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const direction = button.getAttribute('data-direction') === 'next' ? 1 : -1;
-        goToSlide(currentIndex + direction);
-      });
-    });
-
-    videoDots.forEach((dot) => {
-      dot.addEventListener('click', () => {
-        goToSlide(Number(dot.getAttribute('data-index')));
-      });
-    });
-
-    const handleSwipeStart = (clientX) => {
-      startX = clientX;
-      isDragging = true;
-    };
-
-    const handleSwipeEnd = (clientX) => {
-      if (!isDragging) return;
-      const deltaX = clientX - startX;
-      if (deltaX > 70) goToSlide(currentIndex - 1);
-      if (deltaX < -70) goToSlide(currentIndex + 1);
-      isDragging = false;
-    };
-
-    videoIframes.forEach((iframe, index) => {
-      const player = new Vimeo.Player(iframe);
-      players.push(player);
-
-      player.on('play', () => {
-        players.forEach((otherPlayer, otherIndex) => {
-          if (otherIndex !== index) {
-            otherPlayer.pause().catch(() => {});
-          }
+      const resetDriveFrames = () => {
+        iframes.forEach((f, i) => {
+          if (f.dataset.src && f.src && i !== currentIndex) { f.removeAttribute('src'); }
         });
-        activePlayerIndex = index;
+      };
+
+      const updateCarousel = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, index) => dot.classList.toggle('active', index === currentIndex));
+        loadFrame(iframes[currentIndex]);
+      };
+
+      const goToSlide = (index, autoPlay = false) => {
+        currentIndex = (index + slides.length) % slides.length;
+        players.forEach((p) => p && p.pause().catch(() => {}));
+        resetDriveFrames();
+        updateCarousel();
+        if (autoPlay && players[currentIndex]) players[currentIndex].play().catch(() => {});
+      };
+
+      navButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const direction = button.getAttribute('data-direction') === 'next' ? 1 : -1;
+          goToSlide(currentIndex + direction);
+        });
       });
 
-      player.on('ended', () => {
-        const nextIndex = (index + 1) % videoSlides.length;
-        if (nextIndex !== index) {
-          goToSlide(nextIndex, true);
+      iframes.forEach((iframe, index) => {
+        if (!iframe.src || !iframe.src.includes('vimeo.com') || typeof Vimeo === 'undefined') {
+          players.push(null);
+          return;
         }
+        const player = new Vimeo.Player(iframe);
+        players.push(player);
+        allVimeoPlayers.push(player);
+        player.on('play', () => pauseAllVimeo(player));
+        player.on('ended', () => goToSlide(index + 1, true));
       });
 
-      player.on('pause', () => {
-        if (activePlayerIndex === index) {
-          activePlayerIndex = null;
-        }
-      });
+      track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; isDragging = true; }, { passive: true });
+      track.addEventListener('touchend', (e) => endSwipe(e.changedTouches[0].clientX));
+      track.addEventListener('mousedown', (e) => { startX = e.clientX; isDragging = true; });
+      window.addEventListener('mouseup', (e) => endSwipe(e.clientX));
+      function endSwipe(clientX) {
+        if (!isDragging) return;
+        const deltaX = clientX - startX;
+        if (deltaX > 70) goToSlide(currentIndex - 1);
+        if (deltaX < -70) goToSlide(currentIndex + 1);
+        isDragging = false;
+      }
+
+      const lazyIO = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) { loadFrame(iframes[currentIndex]); lazyIO.disconnect(); }
+      }, { rootMargin: '200px' });
+      lazyIO.observe(showcase);
+
+      updateCarousel();
     });
 
     const setMobileFitMode = () => {
       const isPhone = window.matchMedia('(max-width: 720px)').matches;
-      const stage = document.querySelector('.video-stage');
-      if (!stage) return;
-      stage.classList.toggle('mobile-fit', isPhone);
+      document.querySelectorAll('.video-stage').forEach((stage) => stage.classList.toggle('mobile-fit', isPhone));
     };
-
-    if (videoTrack) {
-      videoTrack.addEventListener('touchstart', (event) => handleSwipeStart(event.touches[0].clientX), { passive: true });
-      videoTrack.addEventListener('touchend', (event) => handleSwipeEnd(event.changedTouches[0].clientX));
-      videoTrack.addEventListener('mousedown', (event) => handleSwipeStart(event.clientX));
-      window.addEventListener('mouseup', (event) => handleSwipeEnd(event.clientX));
-    }
-
     window.addEventListener('resize', setMobileFitMode);
     setMobileFitMode();
-    updateCarousel();
   </script>
 
 </body>
