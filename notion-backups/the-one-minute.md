@@ -1,7 +1,7 @@
 # The One Minute – Daily Video Tasks (Notion backup)
 
 Backup of Robin's Notion calendar for the Facebook page **The One Minute** (https://www.facebook.com/theoneminute03).
-Last updated: 2026-11-12
+Last updated: 2026-11-13
 
 ## Notion IDs
 - Main page: 415a1af0-1ace-8161-b6be-e0f639142f40
@@ -31,6 +31,7 @@ Last updated: 2026-11-12
 | 2026-11-17 | Tue | The Countdown | Family | MC, Wife, Daughter | Missed another birthday. | Every day away was for you. | Briefed |
 | 2026-11-18 | Wed | The Cardboard Sign | Dream | MC, Mom, Neighbor | Someday… I'll start. | Start small. Just start. | Briefed |
 | 2026-11-19 | Thu | Dead Battery | Consistency | MC, Wife | Just one more video. | Your phone can wait. Your dream can't. | Briefed |
+| 2026-11-20 | Fri | The Taped Umbrella | Motivational | MC, Daughter | Rejected. Again. In the rain. | Storms end. Keep walking. | Briefed |
 
 ## Loglines
 - **The Sketchbook:** tired office worker finds childhood sketchbook ("Me, the artist"), draws one page a night, a year later his art is in an exhibit and his son draws beside him.
@@ -42,5 +43,6 @@ Last updated: 2026-11-12
 - **The Countdown:** OFW dad misses another birthday; on a video call his daughter shows her paper countdown "Days until Papa comes home"; he starts his own; the day it hits 0 he walks through the gate.
 - **The Cardboard Sign:** notebook full of "someday" food-business plans; writes TURON ₱10 on cardboard and sets up a tiny table outside; Neighbor is the first customer; grows to a real stall with Mom, cardboard sign framed.
 - **Dead Battery:** scrolls until 2 AM while his guitar gathers dust; phone dies and the black screen shows his tired face; phone in a drawer, one chord a night; plays the barangay fiesta stage, wife filming.
+- **The Taped Umbrella:** soaked after another job rejection, throws his broken umbrella in the trash; daughter patches it with colorful tape and a crayon drawing of Papa under the sun; walks to every interview under it until hired; holds it over her on the way to school.
 
-Next free date: 2026-11-20
+Next free date: 2026-11-21
