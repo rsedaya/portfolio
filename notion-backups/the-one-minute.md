@@ -1,7 +1,7 @@
 # The One Minute – Daily Video Tasks (Notion backup)
 
 Backup of Robin's Notion calendar for the Facebook page **The One Minute** (https://www.facebook.com/theoneminute03).
-Last updated: 2026-11-13
+Last updated: 2026-11-14
 
 ## Notion IDs
 - Main page: 415a1af0-1ace-8161-b6be-e0f639142f40
@@ -32,6 +32,7 @@ Last updated: 2026-11-13
 | 2026-11-18 | Wed | The Cardboard Sign | Dream | MC, Mom, Neighbor | Someday… I'll start. | Start small. Just start. | Briefed |
 | 2026-11-19 | Thu | Dead Battery | Consistency | MC, Wife | Just one more video. | Your phone can wait. Your dream can't. | Briefed |
 | 2026-11-20 | Fri | The Taped Umbrella | Motivational | MC, Daughter | Rejected. Again. In the rain. | Storms end. Keep walking. | Briefed |
+| 2026-11-21 | Sat | Two Cups | Family | MC, Mom | Too busy for breakfast. | She waited every morning. Sit down. | Briefed |
 
 ## Loglines
 - **The Sketchbook:** tired office worker finds childhood sketchbook ("Me, the artist"), draws one page a night, a year later his art is in an exhibit and his son draws beside him.
@@ -44,5 +45,6 @@ Last updated: 2026-11-13
 - **The Cardboard Sign:** notebook full of "someday" food-business plans; writes TURON ₱10 on cardboard and sets up a tiny table outside; Neighbor is the first customer; grows to a real stall with Mom, cardboard sign framed.
 - **Dead Battery:** scrolls until 2 AM while his guitar gathers dust; phone dies and the black screen shows his tired face; phone in a drawer, one chord a night; plays the barangay fiesta stage, wife filming.
 - **The Taped Umbrella:** soaked after another job rejection, throws his broken umbrella in the trash; daughter patches it with colorful tape and a crayon drawing of Papa under the sun; walks to every interview under it until hired; holds it over her on the way to school.
+- **Two Cups:** every morning Mom pours two coffees and sets out pandesal while he rushes past on his phone; at the gate he looks back and sees her pour his cold cup into the sink; he walks back in and sits down; one-minute breakfast becomes a daily ritual; in the end he sets the two cups out for her.
 
-Next free date: 2026-11-21
+Next free date: 2026-11-22
