@@ -34,6 +34,14 @@ Last updated: 2026-11-15
 | 2026-11-20 | Fri | The Taped Umbrella | Motivational | MC, Daughter | Rejected. Again. In the rain. | Storms end. Keep walking. | Briefed |
 | 2026-11-21 | Sat | Two Cups | Family | MC, Mom | Too busy for breakfast. | She waited every morning. Sit down. | Briefed |
 | 2026-11-22 | Sun | The Crumpled Form | Dream | MC, Boss, Wife | Too old to start over? | It's never too late. Sign it. | Briefed |
+| 2026-11-23 | Mon | Pagkatapos ng Bagyo | Motivational | MC, Wife, Neighbor | The storm took everything. | After every storm, we rise together. | Briefed |
+| 2026-11-24 | Tue | Ulitin Natin (2016 vs 2026) | Dream | MC, Daughter, Mom | 2016: I froze. | Some songs wait 10 years. Sing it. | Briefed |
+| 2026-11-25 | Wed | Sa Balikat Ko | Family | MC, Dad, Son | He carried me first. | Now it's my turn. | Briefed |
+| 2026-11-26 | Thu | Gawang Kamay | Consistency | MC, Daughter, Wife | Can't buy it? Build it. | Handmade by tired hands. Loved forever. | Briefed |
+| 2026-11-27 | Fri | Unang Kape ni Nanay | Dream | MC, Mom | Her first time in a fancy café. | Not the last, Nay. The first. | Briefed |
+| 2026-11-28 | Sat | Bicep Heart (song: Lakas) | Consistency | MC, Wife, Boss | Too weak? Not for long. | Strength is built one rep a day. | Briefed |
+| 2026-11-29 | Sun | Walang Nakikinig | Motivational | MC, Neighbor | 100 songs. 0 listeners. | Keep playing. Someone is listening. | Briefed |
+| 2026-11-30 | Mon | Bayani Ko | Motivational | MC, Son, Wife | Draw your hero. | Not every hero is in a history book. | Briefed |
 
 ## Loglines
 - **The Sketchbook:** tired office worker finds childhood sketchbook ("Me, the artist"), draws one page a night, a year later his art is in an exhibit and his son draws beside him.
@@ -48,5 +56,18 @@ Last updated: 2026-11-15
 - **The Taped Umbrella:** soaked after another job rejection, throws his broken umbrella in the trash; daughter patches it with colorful tape and a crayon drawing of Papa under the sun; walks to every interview under it until hired; holds it over her on the way to school.
 - **Two Cups:** every morning Mom pours two coffees and sets out pandesal while he rushes past on his phone; at the gate he looks back and sees her pour his cold cup into the sink; he walks back in and sits down; one-minute breakfast becomes a daily ritual; in the end he sets the two cups out for her.
 - **The Crumpled Form:** tired warehouse worker crumples a night-school enrollment form and bins it; strict Boss fishes it out, smooths it flat and sets down a photo of himself graduating at 40; he signs; semesters of tired nights (jeepney studying, Wife's blanket); walks the graduation stage with the wrinkled form framed beside his diploma.
+- **Pagkatapos ng Bagyo (45s, Pinoy rock anthem):** typhoon tears off his roof; rebuilding alone until the Neighbor knocks with nails; the whole street joins; new roof by sunset, SALAMAT painted on the wall.
+- **Ulitin Natin (45s, lo-fi 2016 → OPM acoustic pop):** froze on a school stage in 2016 phone footage; freezes again at a 2026 barangay open-mic; daughter holds up the old video and an ULITIN NATIN, PAPA sign; he sings.
+- **Sa Balikat Ko (45s, Christmas folk-pop):** Dad once carried him on his shoulders to see the plaza tree; now Dad is in a wheelchair; MC carries him up the steps as the lights switch on, then lifts his own son onto his shoulders.
+- **Gawang Kamay (45s, ukulele pop, AI vs Handmade):** can't afford a mall toy guitar; carves one from scrap wood over 30 nights; Night 30 the string works; daughter's off-key strum; AI vs HANDMADE split screen.
+- **Unang Kape ni Nanay (45s, bossa-nova café pop):** first paycheck treat at a fancy café; Mom can't read the menu and offers her old coin purse; flashback of her giving him her plate; first latte sip, foam mustache.
+- **Bicep Heart / Lakas (45s, Pinoy hip-hop):** can't lift a 50 KG rice sack; 90 days of water gallons, push-ups, dawn runs; lifts it on Day 90; gives his wife the bicep heart.
+- **Walang Nakikinig (45s, OPM indie anthem):** busks in the rain with an empty hat; about to quit when the lolo Neighbor dances; a teen's video hits 1M; next night a singing crowd.
+- **Bayani Ko (45s, marching anthem, Bonifacio Day):** class draws Bonifacio; son remembers delivery-rider Dad helping a lola through a flood and giving his raincoat to a kid; draws Dad with a raincoat cape; Dad arrives at the door.
 
-Next free date: 2026-11-23
+## Music-video format (from 2026-11-23)
+- 45 sec, 9 shots × 5 sec, music-inspired (after the 500K+ "Ako ang Bagyo" hit); lyrics are the on-screen captions
+- Each Notion page has: Song Title + Music Style fields, a Flow Music prompt (style + timed lyrics: Intro 0:00–0:05, Verse 0:05–0:20, Pre-Chorus 0:20–0:27, Chorus 0:27–0:42, Outro 0:42–0:45), Flow Music steps (https://www.flowmusic.app/), shot list, checklist
+- Each story is tied to a current trend (OPM pride, 2026-is-the-new-2016, shoulder carry, AI vs handmade, first time in a fancy café, bicep heart, Bonifacio Day)
+
+Next free date: 2026-12-01
